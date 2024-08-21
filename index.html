@@ -15,6 +15,17 @@
       src="https://kit.fontawesome.com/6420d9e702.js"
       crossorigin="anonymous"
     ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+            },
+          },
+        },
+      };
+    </script>
     <!-- font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -164,7 +175,59 @@
 
     <!-- main section start -->
 
-    <main></main>
+    <main class="bg-slate-50">
+      <section class="container mx-auto">
+        <div class="mt-8 lg:flex gap-8 sm:mx-10">
+          <!-- text -->
+          <div class="py-8 lg:py-24 space-y-4 text-center lg:text-left">
+            <div class="relative">
+              <div class="hidden absolute -top-12 -left-12 lg:flex">
+                <img src="assets/Vector.png" alt="" />
+              </div>
+              <button class="btn bg-white rounded-3xl">
+                <i class="fa-solid fa-arrow-right"></i> About us
+              </button>
+            </div>
+            <h3 class="text-5xl font-bold text-center lg:text-left">
+              We design thoughtful, liveable spaces
+            </h3>
+            <p class="text-xl font-medium text-center lg:text-left">
+              The barn house captivates with its blend of rustic charm and
+              modern sophistication, featuring weathered wood, sleek metal
+              accents.
+            </p>
+            <div class="bg-white rounded-2xl p-6 flex space-x-3">
+              <div>
+                <img src="assets/commercial.png" alt="" />
+              </div>
+              <div>
+                <h6 class="font-extrabold text-xl text-left">Commercial</h6>
+                <p class="font-medium text-base text-left">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+            <div class="bg-white rounded-2xl p-6 flex space-x-3">
+              <div>
+                <img src="assets/residential.png" alt="" />
+              </div>
+              <div>
+                <h6 class="font-extrabold text-xl text-left">Residential</h6>
+                <p class="font-medium text-base text-left">
+                  The barn house captivates with its blend of rustic charm and
+                  modern.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- image -->
+          <div class="py-8 lg:py-24">
+            <img src="assets/Rectangle.png" alt="" />
+          </div>
+        </div>
+      </section>
+    </main>
 
     <!-- main section ends -->
 
