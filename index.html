@@ -1,14 +1,164 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title></title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- icon -->
+    <script
+      src="https://kit.fontawesome.com/6420d9e702.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .manrope-font {
+        font-family: "Manrope", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="manrope-font">
     <!-- header section start -->
 
-    <header></header>
+    <header class="container mx-auto lg:mt-7 mt-3">
+      <div class="navbar bg-base-100">
+        <div class="navbar-start">
+          <!-- green arrow -->
+          <div class="relative">
+            <div class="h-8 w-8 bg-green-400 rounded-[50%]"></div>
+            <i
+              class="absolute z-50 top-0 left-[6px] fa-solid fa-arrow-up-long text-2xl rotate-45"
+            ></i>
+          </div>
+          <a class="btn btn-ghost text-4xl font-extrabold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 text-xl font-[500]">
+            <li class="hover:text-red-500 duration-300 ease-in-out font-bold">
+              <a>Home</a>
+            </li>
+            <li class="hover:text-red-500 duration-300 ease-in-out">
+              <a>Services</a>
+            </li>
+            <li class="hover:text-red-500 duration-300 ease-in-out">
+              <a>Portfolio</a>
+            </li>
+            <li class="hover:text-red-500 duration-300 ease-in-out">
+              <a>Blog</a>
+            </li>
+            <li class="hover:text-red-500 duration-300 ease-in-out">
+              <a>Contact Us</a>
+            </li>
+          </ul>
+        </div>
+        <div class="navbar-end flex space-x-7">
+          <div class="hidden lg:flex md:flex space-x-7">
+            <h5>
+              <div class="relative">
+                <div class="h-10 w-10 bg-yellow-50 rounded-[50%]"></div>
+                <i
+                  class="absolute z-50 top-1 left-2 text-gray-500 text-2xl fa-solid fa-cart-shopping"
+                ></i>
+              </div>
+            </h5>
+            <h5 class="lg:visible">
+              <div class="relative">
+                <div class="h-10 w-10 bg-yellow-50 rounded-[50%]"></div>
+                <i
+                  class="absolute z-50 top-1 left-2 text-gray-500 text-2xl fa-solid fa-magnifying-glass"
+                ></i>
+              </div>
+            </h5>
+            <a
+              class="btn bg-green-400 text-black texy-lg font-extrabold rounded-3xl"
+              >Book Consult
+              <div class="relative">
+                <div class="h-8 w-8 bg-black rounded-[50%]"></div>
+                <i
+                  class="absolute z-50 top-0 left-[6px] fa-solid fa-arrow-up-long text-2xl rotate-45 text-white"
+                ></i>
+              </div>
+            </a>
+          </div>
+          <div class="dropdown">
+            <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h8m-8 6h16"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="hidden menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow"
+            >
+              <li class="hover:text-red-500 duration-300 ease-in-out">
+                <a>Home</a>
+              </li>
+              <li class="hover:text-red-500 duration-300 ease-in-out">
+                <a>Services</a>
+              </li>
+              <li class="hover:text-red-500 duration-300 ease-in-out">
+                <a>PortFolio</a>
+              </li>
+              <li class="hover:text-red-500 duration-300 ease-in-out">
+                <a>Blog</a>
+              </li>
+              <li class="hover:text-red-500 duration-300 ease-in-out">
+                <a>Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- banner start -->
+      <div class="my-6">
+        <!-- images -->
+        <div class="flex justify-center items-center">
+          <img src="assets/banner.png" alt="" />
+        </div>
+        <!-- text -->
+        <div class="text-center my-6">
+          <h3 class="font-extrabold lg:text-6xl text-2xl">
+            A barn house of this design has a striking appearance
+          </h3>
+          <p class="my-6 font-medium text-sm lg:text-base">
+            The barn house captivates with its blend of rustic charm and modern
+            sophistication, featuring weathered wood, sleek metal accents, and
+            large windows that flood the space with natural light.
+          </p>
+          <button class="btn bg-green-200 rounded-3xl">
+            View Details
+            <div class="relative">
+              <div class="h-8 w-8 bg-green-400 rounded-[50%]"></div>
+              <i
+                class="absolute z-50 top-0 left-[6px] fa-solid fa-arrow-up-long text-2xl rotate-45"
+              ></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </header>
 
     <!-- header section ends -->
 
